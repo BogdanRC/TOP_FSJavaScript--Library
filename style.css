@@ -167,6 +167,6 @@ form > select {
 }
 
 
-bookInput {
-    display: none!important;
+#bookInput {
+    display: none;
 }
