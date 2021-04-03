@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: #2d4059;
+}
+
+header#pageHeader {
+    
+    display: flex;
+    align-items: center;
+    height: 100px;
+    background-color: #2185d5;
+    padding: 0 20%;
+}
+
+h1 {
+    color: white;
+}
+
+#newBookPane {
+    display: block;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 100px -15px rgba(0,0,0,0.75);
+}
+#bookInput{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white ;
+    padding: 15px 25px;
+    box-sizing: border-box;
+}
+
+#newBookHeader {
+    display: block;
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+h2 {
+    color: rgb(0, 183, 255);
+    font-size: 36px;
+    display: block;
+}
+
+#newBookHeader > button {
+    height: 40px;
+    width: 40px;
+    font-size: 24px;
+    border-radius: 50%;
+    border: none;
+    position: absolute;
+    right: 5%;
+    top: 3%;
+}
+
+#bookInput > form {
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+}
+
+label {
+    font-size: 24px;
+    margin: 15px 0 5px 0;
+}
+
+form > select > option , form > select , form > input {
+    height: 50px;
+    padding-left: 15px;
+    color: rgb(53, 53, 53);
+    font-size: 24px;
+    background-color: rgb(236, 236, 236);
+    border: none;
+    padding-top: 5px;
+}
+
+form > select {
+    outline: none;
+}
+
+#formSubmit {
+    font-size: 24px;
+    display: inline;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(35, 255, 171);
+    border: none;
+    margin-top: 30px;
+    float: right;
+}
+
+#openBookCreationPane {
+    font-size: 36px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    position: fixed;
+    right: 10%;
+    bottom: 10%;
+}
+
+#library {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.book {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 400px;
+    background-color: white ;
+    align-self: center;
+    margin: auto;
+    margin-bottom: 35px;
+}
+
+.bookPara {
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgb(236, 236, 236);
+    text-align: center;
+    width: 100%;
+    font-size: 24px;
+    display: block;
+    margin: 10px;
+}
+
+.book > .bookPara:first-of-type{
+    align-self: center;
+    background-color: #2185d5;
+    margin-top: 0;
+    padding: 15px;
+    border-bottom: none;
+    color: white;
+}
+.book > .bookPara:last-of-type{
+    margin-bottom: 0;
+}
+
+.editBtn {
+    background-color: rgb(35, 255, 171);
+    border: none;
+    font-size: 24px;
+    width: 100%;
+    padding: 10px;
+}
+
+.deleteBtn {
+    background-color: #2185d5;
+    border: none;
+    font-size: 24px;
+    width: 100%;
+    padding: 10px;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header id="pageHeader">
+        <h1>Virtual Library</h1>
+    </header>
+
+
+    <article id="newBookPane">
+
+        <section id="bookInput">
+
+            <header id="newBookHeader">
+                <h2>New Book</h2>
+                <button id="exitWindowBtn">x</button>
+            </header>
+
+            <form action="" id="form">
+                <label for="title">Title:</label>
+                <input type="text" id="bookTitle" value="Title" placeholder="Title">
+
+                <label for="Author">Author:</label>
+                <input type="text" id="bookAuthor" value="Author" placeholder="Author">
+
+                <label for="Pages">Number of pages:</label>
+                <input type="text" id="bookPageNum" value="Pages" placeholder="Pages">
+
+                <label for="readStatus">Have you read this book?</label>
+                <select id="bookReadStatus">
+                    <option value="I have read it">I have read it</option>
+                    <option value="I have not read it">I have not read it</option>
+                </select>
+
+                <button id="formSubmit" type="submit">submit</button>
+            </form>
+        </section>
+        
+    </article>
+    <button id="openBookCreationPane">+</button>
+
+    <article id="library">
+    </article>
+
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
