@@ -101,6 +101,11 @@ function loopThroughLibrary() {
         newBookSection.remove();
         delete myLibrary[newBookSection.getAttribute(`data`)]
     })
+
+    bookTitleFromForm.value = ``;
+    bookAuthorFromForm.value = ``;
+    bookPageNumFromForm.value = ``;
+    bookReadStatusFromForm.value = ``;
 }
 
 function submitFormEvent(event) {
